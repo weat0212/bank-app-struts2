@@ -11,7 +11,7 @@ public class DbConnector {
 	private Connection conn;
 
 	public Connection connect() throws ClassNotFoundException, SQLException {
-		String URL = "jdbc:mysql://localhost:3306/training";
+		String URL = "jdbc:mysql://localhost:3306/training2";
 		Class.forName("com.mysql.jdbc.Driver");
 		try {
 			conn = DriverManager.getConnection(URL, "root", "password");

@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.5.1//EN"
-"http://hibernate.sourceforge.net/hibernate-mapping-3.5.1.dtd">
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-	<class name="">
-	
+	<class name="filetrans.models.UploadCase" table="upload_case">
+		<id name="caseId" type="java.lang.Long">
+            <column name="case_id" />
+            <generator class="identity" />
+        </id>
+        <property name="caseNum" type="string">
+            <column name="case_no" length="32" not-null="true" />
+        </property>
+        <property name="emiNum" type="string">
+            <column name="emi_no" length="32" not-null="true" />
+        </property>
+        <property name="creditCardNum" type="string">
+            <column name="creditcard_no" length="16" not-null="true" />
+        </property>
+        <property name="customerName" type="string">
+            <column name="customer_name" length="32" not-null="true" />
+        </property>
+        <property name="uploadTime" type="timestamp">
+            <column name="upload_time" length="32" not-null="true" />
+        </property>
 	</class>
-
+	
 </hibernate-mapping>
