@@ -5,7 +5,8 @@
     
 <struts>
 	<package name="filetrans" extends="struts-default">
-		<action name="uploadAction" class="filetrans.action.FileTransUploadAction">
+		<action name="uploadAction" class="filetrans.action.FileTransUploadAction"
+				method="execute">
 			<result name="input">/upload.jsp</result>
 			<result name="success">/uploadInfo.jsp</result>
 		</action>

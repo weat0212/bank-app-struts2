@@ -18,11 +18,11 @@
 				<h2>資料登錄系統</h2>
 				<div class="mb-4">
 					<s:form action="uploadAction" class="form-group">
-						<s:textfield name="caseNum" class="form-control" label="案例號碼" />
-						<s:textfield name="emiNum" class="form-control" label="電文代碼" />
-						<s:textfield name="creditCardNum" class="form-control"
+						<s:textfield id="caseNum" name="uploadCase.caseNum" class="form-control" label="案例號碼" />
+						<s:textfield id="emiNum" name="uploadCase.emiNum" class="form-control" label="電文代碼" />
+						<s:textfield id="creditCardNum" name="uploadCase.creditCardNum" class="form-control"
 							label="信用卡號" placeholder="****-****-****-****" maxlength="16" />
-						<s:textfield name="customerName" class="form-control"
+						<s:textfield id="customerName" name="uploadCase.customerName" class="form-control"
 							label="信用卡客戶名稱" />
 						<s:submit class="btn btn-success" value="確認送出"/>
 						<s:reset class="btn" value="清空資料"/>

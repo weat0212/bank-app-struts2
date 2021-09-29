@@ -21,27 +21,27 @@
 
 					<div class="list-group-item">
 						<s:label value="案例號碼:"/>
-						<s:property value="caseNum" />
+						<s:property value="uploadCase.caseNum" />
 					</div>
 
 					<div class="list-group-item">
 						<s:label value="電文號碼:"/>
-						<s:property value="emiNum" />
+						<s:property value="uploadCase.emiNum" />
 					</div>
 
 					<div class="list-group-item">
 						<s:label value="信用卡號:"/>
-						<s:property value="creditCardNum" />
+						<s:property value="uploadCase.creditCardNum" />
 					</div>
 
 					<div class="list-group-item">
 						<s:label value="客戶名稱:"/>
-						<s:property value="customerName" />
+						<s:property value="uploadCase.customerName" />
 					</div>
 
 					<div class="list-group-item">
 						<s:label value="上傳時間:" />
-						<s:property value="uploadTime" />
+						<s:property value="uploadCase.uploadTime" />
 					</div>
 				</div>
 			</div>

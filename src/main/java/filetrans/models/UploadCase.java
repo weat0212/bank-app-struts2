@@ -1,6 +1,7 @@
 package filetrans.models;
 
 import java.io.Serializable;
+import java.sql.Timestamp;
 
 public class UploadCase implements Serializable {
 
@@ -9,7 +10,7 @@ public class UploadCase implements Serializable {
 	private String emiNum;
 	private String creditCardNum;
 	private String customerName;
-	private String uploadTime;
+	private Timestamp uploadTime;
 	
 	public String getCaseNum() {
 		return caseNum;
@@ -43,11 +44,11 @@ public class UploadCase implements Serializable {
 		this.customerName = customerName;
 	}
 	
-	public String getUploadTime() {
+	public Timestamp getUploadTime() {
 		return uploadTime;
 	}
 	
-	public void setUploadTime(String uploadTime) {
+	public void setUploadTime(Timestamp uploadTime) {
 		this.uploadTime = uploadTime;
 	}
 }
