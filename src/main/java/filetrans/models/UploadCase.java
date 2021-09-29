@@ -1,18 +1,15 @@
-package filetrans;
+package filetrans.models;
 
-import com.opensymphony.xwork2.Action;
+import java.io.Serializable;
 
-public class FileTransUploadAction implements Action {
+public class UploadCase implements Serializable {
 
+	private static final long serialVersionUID = 1L;
 	private String caseNum;
 	private String emiNum;
 	private String creditCardNum;
 	private String customerName;
 	private String uploadTime;
-
-	public String execute() {
-		return SUCCESS;
-	}
 	
 	public String getCaseNum() {
 		return caseNum;

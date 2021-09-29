@@ -15,6 +15,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-3">
+			<div class="alert alert-info">成功上傳檔案!</div>
 				<h2>資料登錄系統</h2>
 				<div class="mb-4 list-group">
 

@@ -45,3 +45,5 @@ test-output
 /.sonar/
 
 build
+
+**/WEB-INF/lib
