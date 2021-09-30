@@ -10,5 +10,11 @@
 			<result name="input">/upload.jsp</result>
 			<result name="success">/uploadInfo.jsp</result>
 		</action>
+		
+		<action name="downloadAction" class="filetrans.action.FileTransDownloadAction"
+				method="execute">
+			<result name="input">/download.jsp</result>
+			<result name="success">/downloadInfo.jsp</result>
+		</action>
 	</package>
 </struts>
