@@ -12,6 +12,18 @@ public class UploadCase implements Serializable {
 	private String customerName;
 	private Timestamp uploadTime;
 	
+	public UploadCase() {
+	}
+
+	public UploadCase(String caseNum, String emiNum, String creditCardNum, String customerName, Timestamp uploadTime) {
+		super();
+		this.caseNum = caseNum;
+		this.emiNum = emiNum;
+		this.creditCardNum = creditCardNum;
+		this.customerName = customerName;
+		this.uploadTime = uploadTime;
+	}
+
 	public String getCaseNum() {
 		return caseNum;
 	}
